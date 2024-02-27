@@ -1,16 +1,18 @@
 import mysql from 'mysql2/promise';
 
-// Import the required MySQL module
-const mysql = require('mysql');
-
 // Define a class named Database
-class Database {
+export class Database {
     // Constructor method to initialize the database connection
   constructor(config) {
     // Create a connection to the MySQL database using the provided configuration
     this.connection = mysql.createConnection(config);
   }}
 
+  
+  
+  
+  
+  
   // Method to execute SQL queries asynchronously and return a promise with the results
  /* async query(sql, params) {
     return new Promise((resolve, reject) => {
